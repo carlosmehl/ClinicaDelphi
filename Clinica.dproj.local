@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2026/05/05 20:10:59.726,=C:\Users\Acer Aspire 5\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/05/05 20:11:50.923,C:\Users\Acer Aspire 5\Desktop\SistemaClinica\UnitPrincipal.dfm=C:\Users\Acer Aspire 5\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2026/05/05 20:11:50.923,C:\Users\Acer Aspire 5\Desktop\SistemaClinica\UnitPrincipal.pas=C:\Users\Acer Aspire 5\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/05/05 20:12:11.621,C:\Users\Acer Aspire 5\Desktop\SistemaClinica\Clinica.dproj=C:\Users\Acer Aspire 5\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2026/05/05 20:49:10.894,=C:\Users\Acer Aspire 5\Desktop\SistemaClinica\Unit2.pas</Transaction>
+    <Transaction>2026/05/05 20:49:58.144,C:\Users\Acer Aspire 5\Desktop\SistemaClinica\UnitCadPacientes.dfm=C:\Users\Acer Aspire 5\Desktop\SistemaClinica\Unit2.dfm</Transaction>
+    <Transaction>2026/05/05 20:49:58.144,C:\Users\Acer Aspire 5\Desktop\SistemaClinica\UnitCadPacientes.pas=C:\Users\Acer Aspire 5\Desktop\SistemaClinica\Unit2.pas</Transaction>
+    <Transaction>2026/05/05 20:50:15.632,=C:\Users\Acer Aspire 5\Desktop\SistemaClinica\Unit3.pas</Transaction>
+    <Transaction>2026/05/05 20:50:33.131,C:\Users\Acer Aspire 5\Desktop\SistemaClinica\UnitCadAgendamentos.pas=C:\Users\Acer Aspire 5\Desktop\SistemaClinica\Unit3.pas</Transaction>
+    <Transaction>2026/05/05 20:50:33.131,C:\Users\Acer Aspire 5\Desktop\SistemaClinica\UnitCadAgendamentos.dfm=C:\Users\Acer Aspire 5\Desktop\SistemaClinica\Unit3.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,27 @@
+# Delphi
+*.exe
+*.dll
+*.bpl
+*.dcu
+*.identcache
+*.local
+*.stat
+
+# Project local config
+*.dproj.local
+
+# Build folders
+Win32/
+Win64/
+Debug/
+Release/
+
+# Backup files
+*.~*
+
+# Logs
+*.log
+
+# SQL
+*.db
+*.sqlite
