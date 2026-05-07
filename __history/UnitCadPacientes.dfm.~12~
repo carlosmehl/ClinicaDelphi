@@ -1,0 +1,227 @@
+object FormPacientes: TFormPacientes
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Cadastro de Pacientes'
+  ClientHeight = 487
+  ClientWidth = 624
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -21
+  Font.Name = 'Segoe UI'
+  Font.Style = [fsBold]
+  Position = poScreenCenter
+  TextHeight = 30
+  object Label2: TLabel
+    Left = 24
+    Top = 128
+    Width = 15
+    Height = 20
+    Caption = 'ID'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 184
+    Top = 128
+    Width = 24
+    Height = 20
+    Caption = 'CPF'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 24
+    Top = 190
+    Width = 41
+    Height = 20
+    Caption = 'Nome'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 24
+    Top = 262
+    Width = 46
+    Height = 20
+    Caption = 'Celular'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 184
+    Top = 262
+    Width = 114
+    Height = 20
+    Caption = 'Data de cadastro'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 320
+    Top = 128
+    Width = 102
+    Height = 20
+    Caption = 'Buscar Paciente'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 624
+    Height = 105
+    Align = alTop
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 24
+      Top = 37
+      Width = 213
+      Height = 30
+      Caption = 'Cadastro de Pacientes'
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 344
+      Top = 42
+      Width = 240
+      Height = 25
+      DataSource = DM.dsPaciente
+      TabOrder = 0
+    end
+  end
+  object DBEdit1: TDBEdit
+    Left = 24
+    Top = 152
+    Width = 121
+    Height = 28
+    DataField = 'id'
+    DataSource = DM.dsPaciente
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object DBEdit2: TDBEdit
+    Left = 24
+    Top = 216
+    Width = 281
+    Height = 25
+    DataField = 'nome'
+    DataSource = DM.dsPaciente
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+  object DBEdit3: TDBEdit
+    Left = 24
+    Top = 288
+    Width = 121
+    Height = 28
+    DataField = 'celular'
+    DataSource = DM.dsPaciente
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+  end
+  object DBEdit4: TDBEdit
+    Left = 184
+    Top = 152
+    Width = 121
+    Height = 28
+    DataField = 'cpf'
+    DataSource = DM.dsPaciente
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+  end
+  object DBEdit5: TDBEdit
+    Left = 184
+    Top = 288
+    Width = 121
+    Height = 28
+    DataField = 'data_cadastro'
+    DataSource = DM.dsPaciente
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+  end
+  object DBGrid1: TDBGrid
+    Left = 320
+    Top = 190
+    Width = 296
+    Height = 289
+    DataSource = DM.dsPaciente
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -15
+    TitleFont.Name = 'Segoe UI'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'nome'
+        Title.Caption = 'Pacientes Cadastrados'
+        Visible = True
+      end>
+  end
+  object txtBusca: TEdit
+    Left = 320
+    Top = 152
+    Width = 296
+    Height = 28
+    TabOrder = 7
+    OnChange = txtBuscaChange
+  end
+end

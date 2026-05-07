@@ -1,0 +1,67 @@
+object FormPacientes: TFormPacientes
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Cadastro de Pacientes'
+  ClientHeight = 441
+  ClientWidth = 624
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -21
+  Font.Name = 'Segoe UI'
+  Font.Style = [fsBold]
+  Position = poScreenCenter
+  TextHeight = 30
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 624
+    Height = 105
+    Align = alTop
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 24
+      Top = 37
+      Width = 213
+      Height = 30
+      Caption = 'Cadastro de Pacientes'
+    end
+  end
+  object DBEdit1: TDBEdit
+    Left = 24
+    Top = 136
+    Width = 121
+    Height = 25
+    TabOrder = 1
+  end
+  object DBEdit2: TDBEdit
+    Left = 24
+    Top = 176
+    Width = 281
+    Height = 25
+    TabOrder = 2
+  end
+  object DBEdit3: TDBEdit
+    Left = 24
+    Top = 216
+    Width = 121
+    Height = 25
+    TabOrder = 3
+  end
+  object DBEdit4: TDBEdit
+    Left = 184
+    Top = 136
+    Width = 121
+    Height = 25
+    TabOrder = 4
+  end
+  object DBEdit5: TDBEdit
+    Left = 184
+    Top = 216
+    Width = 121
+    Height = 25
+    TabOrder = 5
+  end
+end

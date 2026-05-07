@@ -5,7 +5,7 @@ object FormAgendamentos: TFormAgendamentos
   BorderStyle = bsSingle
   Caption = 'Cadastro de Agendamentos'
   ClientHeight = 441
-  ClientWidth = 624
+  ClientWidth = 761
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,4 +14,232 @@ object FormAgendamentos: TFormAgendamentos
   Font.Style = []
   Position = poScreenCenter
   TextHeight = 15
+  object Label2: TLabel
+    Left = 24
+    Top = 128
+    Width = 15
+    Height = 20
+    Caption = 'ID'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 160
+    Top = 128
+    Width = 122
+    Height = 20
+    Caption = 'Nome do Paciente'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 24
+    Top = 192
+    Width = 32
+    Height = 20
+    Caption = 'Data'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 160
+    Top = 192
+    Width = 33
+    Height = 20
+    Caption = 'Hora'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 24
+    Top = 264
+    Width = 92
+    Height = 20
+    Caption = 'Especialidade'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 24
+    Top = 336
+    Width = 117
+    Height = 20
+    Caption = 'Nome do M'#233'dico'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 761
+    Height = 105
+    Align = alTop
+    TabOrder = 0
+    ExplicitWidth = 624
+    object Label1: TLabel
+      Left = 24
+      Top = 37
+      Width = 149
+      Height = 30
+      Caption = 'Agendamentos'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 344
+      Top = 42
+      Width = 240
+      Height = 25
+      DataSource = DM.dsAgendamento
+      TabOrder = 0
+    end
+  end
+  object DBEdit1: TDBEdit
+    Left = 24
+    Top = 152
+    Width = 121
+    Height = 23
+    DataField = 'id'
+    DataSource = DM.dsAgendamento
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object DBLookupComboBox1: TDBLookupComboBox
+    Left = 160
+    Top = 152
+    Width = 249
+    Height = 23
+    DataField = 'id_paciente'
+    DataSource = DM.dsAgendamento
+    KeyField = 'id'
+    ListField = 'nome'
+    ListSource = DM.dsPaciente
+    TabOrder = 2
+  end
+  object DBEdit2: TDBEdit
+    Left = 24
+    Top = 216
+    Width = 121
+    Height = 23
+    DataField = 'data'
+    DataSource = DM.dsAgendamento
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    MaxLength = 10
+    ParentFont = False
+    TabOrder = 3
+  end
+  object DBEdit3: TDBEdit
+    Left = 160
+    Top = 216
+    Width = 121
+    Height = 23
+    DataField = 'hora'
+    DataSource = DM.dsAgendamento
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    MaxLength = 5
+    ParentFont = False
+    TabOrder = 4
+  end
+  object DBComboBox1: TDBComboBox
+    Left = 24
+    Top = 290
+    Width = 145
+    Height = 23
+    DataField = 'especialidade'
+    DataSource = DM.dsAgendamento
+    Items.Strings = (
+      'Cardiologista'
+      'Nutricionista'
+      'Nefrologista'
+      'Dentista')
+    TabOrder = 5
+  end
+  object DBEdit4: TDBEdit
+    Left = 24
+    Top = 362
+    Width = 297
+    Height = 23
+    DataField = 'medico'
+    DataSource = DM.dsAgendamento
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+  end
+  object DBGrid1: TDBGrid
+    Left = 424
+    Top = 152
+    Width = 329
+    Height = 233
+    DataSource = DM.dsAgendamento
+    TabOrder = 7
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -12
+    TitleFont.Name = 'Segoe UI'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'data'
+        Title.Caption = 'DATA'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'hora'
+        Title.Caption = 'HORA'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'especialidade'
+        Title.Caption = 'ESPECIALIDADE'
+        Visible = True
+      end>
+  end
 end
